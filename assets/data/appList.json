@@ -1,0 +1,56 @@
+[
+  {
+    "title": { "ko": "지그재그 래빗", "en": "ZigZag RABBIT" },
+    "desc": {
+      "ko": "토끼가 떨어지지 말고 지그재그로 최대한 멀리 이동하는 게임",
+      "en": "Arcade game: Rabbit moves as far as possible in a zigzag pattern without falling."
+    },
+    "img": "https://kangjung.github.io/assets/img/zigzagrabbit/zigzag.png",
+    "tags": ["Unity"],
+    "stores": [
+      { "name": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.KangJung.ZigZagRABBIT" },
+      { "name": "원스토어", "url": "https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000770293" },
+      { "name": "itch.io", "url": "https://kangjung.itch.io/zigzag-rabbit" }
+    ]
+  },
+  {
+    "title": { "ko": "행성 수박 게임", "en": "Planet Game" },
+    "desc": {
+      "ko": "행성을 충돌시켜 더 큰 행성을 만드는 퍼즐 게임",
+      "en": "Puzzle game where planets collide and merge into bigger planets."
+    },
+    "img": "https://kangjung.github.io/assets/img/planet.png",
+    "tags": ["Unity"],
+    "stores": [
+      { "name": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.Kangjung.PlanetGame" },
+      { "name": "원스토어", "url": "https://m.onestore.co.kr/mobilepoc/apps/appsDetail.omp?prodId=0000773862" },
+      { "name": "itch.io", "url": "https://kangjung.itch.io/planet-game" }
+    ]
+  },
+  {
+    "title": { "ko": "1010!", "en": "1010!" },
+    "desc": {
+      "ko": "10x10 공간에 블록을 배치해 줄을 완성하는 퍼즐 게임",
+      "en": "Puzzle game where you place blocks and clear lines in a 10x10 grid."
+    },
+    "img": "https://kangjung.github.io/assets/img/1010.png",
+    "tags": ["Unity"],
+    "stores": [
+      { "name": "Google Play", "url": "https://play.google.com/store/apps/details?id=com.KangJung.game_1010" },
+      { "name": "원스토어", "url": "https://m.onestore.co.kr/ko-kr/apps/appsDetail.omp?prodId=0000780009" },
+      { "name": "itch.io", "url": "https://kangjung.itch.io/1010" }
+    ]
+  },
+  {
+    "title": { "ko": "잠깐, 여행", "en": "wait, travel" },
+    "desc": {
+      "ko": "위치기반 관광정보 조회 웹사이트 & 앱 서비스",
+      "en": "Location-based tourism information website and app service."
+    },
+    "img": "https://kangjung.github.io/assets/img/jamggan-trip/jamggan-trip.png",
+    "tags": ["Vue.js", "Spring Boot"],
+    "stores": [
+      { "name": "Web Site", "url": "https://jamggan-trip.netlify.app" }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | KANGJUNG.dev</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <a class="brand" href="index.html">KANGJUNG.dev</a>
+      <nav>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="art.html">Pixel Art</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1>Games & Apps</h1>
+        <p>
+          기존 <code>appList.json</code> 구조를 유지하면서, 카드형 UI와 태그 필터를 붙여서
+          업데이트하기 쉽게 만들었습니다.
+        </p>
+        <div id="tag-filter" class="chips"></div>
+      </section>
+
+      <section id="projects-grid" class="grid three"></section>
+    </main>
+
+    <footer class="site-footer">데이터 파일: <code>assets/data/appList.json</code></footer>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
