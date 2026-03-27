@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KANGJUNG.dev | Games, Apps & Pixel Art</title>
+    <meta
+      name="description"
+      content="KANGJUNG의 게임, 앱, 픽셀아트를 소개하는 포트폴리오 사이트"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html">KANGJUNG.dev</a>
+      <nav>
+        <a href="projects.html">Projects</a>
+        <a href="art.html">Pixel Art</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero card">
+        <p class="chip">웹 개발자 · 게임 제작 · 픽셀아트</p>
+        <h1>내가 만든 게임/앱과 픽셀아트를 한곳에서 보여주는 포트폴리오</h1>
+        <p>
+          기존 소개 페이지는 유지하되, 프로젝트 중심 구조로 확장해서 방문자가
+          <strong>바로 플레이/설치/확인</strong>할 수 있도록 구성했습니다.
+        </p>
+        <div class="actions">
+          <a class="btn" href="projects.html">프로젝트 보러가기</a>
+          <a class="btn ghost" href="https://kangjung.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+          <a class="btn ghost" href="https://github.com/kangjung" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="card">
+          <h2>추천 사이트 구성</h2>
+          <ol>
+            <li><strong>Home</strong>: 나를 한 줄로 소개 + 대표작 3개</li>
+            <li><strong>Projects</strong>: 앱/게임 카드 + 태그 필터 + 스토어 링크</li>
+            <li><strong>Pixel Art</strong>: 작품 썸네일 갤러리 + 작업 메모</li>
+            <li><strong>About</strong>: 경력, 사용기술, 연락처</li>
+          </ol>
+        </article>
+        <article class="card" id="featured-projects">
+          <h2>대표 프로젝트</h2>
+          <div class="project-list" data-render="featured"></div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2026 KANGJUNG. Built with GitHub Pages.</footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
