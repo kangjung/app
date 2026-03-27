@@ -1,5 +1,11 @@
 const DATA_PATH = 'assets/data/appList.json';
 
+const STORE_ICON_MAP = {
+  'Google Play': 'https://cdn.simpleicons.org/googleplay/34A853',
+  'itch.io': 'https://cdn.simpleicons.org/itchdotio/FA5C5C',
+  'Web Site': 'https://cdn.simpleicons.org/googlechrome/4285F4'
+};
+
 async function loadProjects() {
   const response = await fetch(DATA_PATH);
   if (!response.ok) throw new Error('appList.json 로딩 실패');
@@ -36,6 +42,31 @@ function renderTagFilter(projects, onFilter) {
   });
 }
 
+function getStoreIcon(store) {
+  return store.icon || STORE_ICON_MAP[store.name] || '';
+}
+
+function renderStoreLink(store) {
+  const icon = getStoreIcon(store);
+  const safeName = store.name || 'Link';
+
+  if (!icon) {
+    return `
+      <a href="${store.url}" target="_blank" rel="noreferrer">
+        <span class="store-icon fallback" aria-hidden="true">${safeName.slice(0, 1)}</span>
+        <span>${safeName}</span>
+      </a>
+    `;
+  }
+
+  return `
+    <a href="${store.url}" target="_blank" rel="noreferrer">
+      <img class="store-icon" src="${icon}" alt="${safeName} 아이콘" loading="lazy" />
+      <span>${safeName}</span>
+    </a>
+  `;
+}
+
 function renderProjects(projects, tag = 'All') {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
@@ -43,9 +74,7 @@ function renderProjects(projects, tag = 'All') {
   const visible = tag === 'All' ? projects : projects.filter((p) => (p.tags || []).includes(tag));
 
   grid.innerHTML = visible.map((project) => {
-    const stores = (project.stores || []).map((store) => `
-      <a href="${store.url}" target="_blank" rel="noreferrer">${store.name}</a>
-    `).join('');
+    const stores = (project.stores || []).map((store) => renderStoreLink(store)).join('');
 
     const tags = (project.tags || []).map((t) => `<span class="tag">${t}</span>`).join('');
 
